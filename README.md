@@ -31,24 +31,35 @@ A modern, high-resolution, client-side QR Code Generator built with **React**, *
 
 ---
 
-## 🌐 Custom Domain & GitHub Pages Setup
+## 🌐 Custom Domain & GitHub Pages Setup (Branch Hosting)
 
-This repository is pre-configured with:
-- **`public/CNAME`** & **`CNAME`**: Points to `qrgenerated.techmiyaedtech.com`.
-- **`.github/workflows/deploy.yml`**: Official GitHub Actions workflow that builds Vite and deploys automatically upon pushing to `main`.
+This repository is configured to host directly from the **`gh-pages` branch** without using GitHub Actions.
 
-### DNS Configuration (At your Domain Registrar):
-Add the following DNS record:
+### 1. Deploy the Static Build to `gh-pages` branch
+Run:
+```bash
+npm run deploy
+```
+This automatically builds the project and publishes the compiled static files (`index.html`, `assets/`, `CNAME`, `.nojekyll`) to the `gh-pages` branch on GitHub.
+
+### 2. DNS Configuration (GoDaddy):
+Add the following record:
 - **Type**: `CNAME`
-- **Name / Host**: `qrgenerated`
-- **Target / Value**: `Techmiya95.github.io`
-- **TTL**: Auto / 1/2 Hour
+- **Name**: `qrgenerated`
+- **Value**: `techmiya95.github.io.`
+- **TTL**: `1/2 Hour`
 
-### GitHub Repository Settings:
+### 3. GitHub Pages Repository Settings:
 1. Go to repository **Settings** → **Pages**.
 2. Under **Build and deployment** → **Source**, select:
-   - **GitHub Actions** (recommended — uses the automated workflow).
-3. Under **Custom domain**, verify `qrgenerated.techmiyaedtech.com` and ensure **Enforce HTTPS** is checked.
+   - **Deploy from a branch**
+3. Under **Branch**, select:
+   - **`gh-pages`** and folder **`/ (root)`** → Click **Save**.
+4. Under **Custom domain**, enter:
+   ```text
+   qrgenerated.techmiyaedtech.com
+   ```
+5. Check **Enforce HTTPS**.
 
 ---
 

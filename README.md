@@ -1,6 +1,6 @@
 # 🔳 Techmiya QR Studio
 
-A modern, high-resolution, client-side QR Code Generator built with **React**, **Vite**, and **Vanilla CSS**. Designed for **Techmiya EdTech** and optimized for automated deployment on **GitHub Pages** with the custom domain `qrgenerator.techmiyaedtech.com`.
+A modern, high-resolution, client-side QR Code Generator built with **React**, **Vite**, and **Vanilla CSS**. Designed for **Techmiya EdTech** and optimized for automated deployment on **GitHub Pages** with the custom domain `qrgenerated.techmiyaedtech.com`.
 
 ---
 
@@ -34,21 +34,21 @@ A modern, high-resolution, client-side QR Code Generator built with **React**, *
 ## 🌐 Custom Domain & GitHub Pages Setup
 
 This repository is pre-configured with:
-- **`public/CNAME`** & **`CNAME`**: Points to `qrgenerator.techmiyaedtech.com`.
+- **`public/CNAME`** & **`CNAME`**: Points to `qrgenerated.techmiyaedtech.com`.
 - **`.github/workflows/deploy.yml`**: Official GitHub Actions workflow that builds Vite and deploys automatically upon pushing to `main`.
 
 ### DNS Configuration (At your Domain Registrar):
 Add the following DNS record:
 - **Type**: `CNAME`
-- **Name / Host**: `qrgenerator`
+- **Name / Host**: `qrgenerated`
 - **Target / Value**: `Techmiya95.github.io`
-- **TTL**: Auto / 1 Hour
+- **TTL**: Auto / 1/2 Hour
 
 ### GitHub Repository Settings:
 1. Go to repository **Settings** → **Pages**.
 2. Under **Build and deployment** → **Source**, select:
    - **GitHub Actions** (recommended — uses the automated workflow).
-3. Under **Custom domain**, verify `qrgenerator.techmiyaedtech.com` and ensure **Enforce HTTPS** is checked.
+3. Under **Custom domain**, verify `qrgenerated.techmiyaedtech.com` and ensure **Enforce HTTPS** is checked.
 
 ---
 

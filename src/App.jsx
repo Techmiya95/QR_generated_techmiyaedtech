@@ -103,7 +103,7 @@ export default function App() {
       <div className="custom-domain-badge">
         <Globe size={18} />
         <span>
-          Production Ready: Configured for custom domain <code>qrgenerator.techmiyaedtech.com</code> on GitHub Pages.
+          Production Ready: Configured for custom domain <code>qrgenerated.techmiyaedtech.com</code> on GitHub Pages.
         </span>
       </div>
 
@@ -157,12 +157,12 @@ export default function App() {
         <div style={{ fontSize: '0.8rem' }}>
           Custom Domain:{' '}
           <a
-            href="https://qrgenerator.techmiyaedtech.com"
+            href="https://qrgenerated.techmiyaedtech.com"
             className="footer-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            qrgenerator.techmiyaedtech.com
+            qrgenerated.techmiyaedtech.com
           </a>
         </div>
       </footer>
